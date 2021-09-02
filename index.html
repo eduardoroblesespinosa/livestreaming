@@ -1395,7 +1395,7 @@
                           <button style="background-color:#ff0000" id="setup-new-session"><img class="bloque" src="index_archivos/video.png" />&nbsp;&nbsp;&nbsp;Iniciar VideoConferencia</button>
                       </div>
                   </div>
-                  <div id="rooms-list" class="col-sm-12">
+                  <div align="right" id="rooms-list" class="col-sm-12">
 
                   </div>
               </div>
@@ -1481,7 +1481,7 @@
 
                       var tr = document.createElement('tr');
                       tr.innerHTML = '<td><strong><img src="index_archivos/user.png"/>' + ' ' + session.extra['session-name'] + ' ' + '</strong><label class="text-white"> está en una sesión activa.</label></td>' +
-                          '<td><button class="join btn btn-warning" id="setup-new-session"><img src="index_archivos/chat.png"/></button></td>';
+                          '<td><button style="background-color:#ff0000" id="setup-new-session"><img src="index_archivos/chat.png"/></button></td>';
                       roomsList.insertBefore(tr, roomsList.firstChild);
 
                       tr.querySelector('.join').setAttribute('data-sessionid', session.sessionid);
