@@ -1443,7 +1443,7 @@
                   var connection = new RTCMultiConnection();
 
                   // https://github.com/muaz-khan/WebRTC-Experiment/tree/master/socketio-over-nodejs
-                  var SIGNALING_SERVER = 'https://rtcmulticonnection.herokuapp.com:443/';
+                  var SIGNALING_SERVER = 'https://socketio-over-nodejs2.herokuapp.com:443/';
                   connection.openSignalingChannel = function (config) {
                       var channel = config.channel || connection.channel || 'default-namespace';
                       var sender = Math.round(Math.random() * 9999999999) + 9999999999;
